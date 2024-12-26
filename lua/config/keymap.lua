@@ -49,6 +49,11 @@ imap(';', ';<c-g>u')
 
 nmap('Q', '<Nop>')
 
+-- Map 'kj' to behave like <Esc>
+imap('kj', '<Esc>') -- In insert mode
+vmap('kj', '<Esc>') -- In visual mode
+cmap('kj', '<C-c>') -- In command-line mode
+
 --- Send code to terminal with vim-slime
 --- If an R terminal has been opend, this is in r_mode
 --- and will handle python code via reticulate when sent

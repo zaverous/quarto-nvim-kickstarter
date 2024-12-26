@@ -199,7 +199,7 @@ return {
     'nvim-tree/nvim-tree.lua',
     enabled = true,
     keys = {
-      { '<c-b>', ':NvimTreeToggle<cr>', desc = 'toggle nvim-tree' },
+      { '\\', ':NvimTreeToggle<cr>', desc = 'toggle nvim-tree' },
     },
     config = function()
       require('nvim-tree').setup {
@@ -231,7 +231,7 @@ return {
     },
     cmd = 'Neotree',
     keys = {
-      { '<c-b>', ':Neotree toggle<cr>', desc = 'toggle nvim-tree' },
+      { '\\', ':Neotree toggle<cr>', desc = 'toggle nvim-tree' },
     },
   },
 
